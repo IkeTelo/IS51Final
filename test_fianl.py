@@ -45,3 +45,26 @@ calculate_percent_above_avg()
 main()
 
 """
+# Exam End
+
+def calculate_percent_above_average(grades, avg):
+    num_grades = 0
+    for grade in grades:
+        if (grade > avg):
+            num_grades += 1
+    return ((num_grades/len(grades))*100)
+
+def main():
+    infile = open('Final.txt')
+    grades = []
+    for line in infile:
+        grades.append(int(line.strip()))
+    print("Number of grades:", len(grades))
+    avg = 0
+    for grade in grades:
+        avg += grade
+    avg = avg/len(grades)
+    print("The average grade is:", avg)
+    print("The percentage of grades above the class avarage is: {:.2f}%".format(calculate_percent_above_average(grades,avg)))
+
+main()
