@@ -14,3 +14,34 @@ the functions will output the number of grades
 then loop through the scores and output a class average
 and finaly, loop and output the % of all grades that are > average
 """
+# Pseudo-code
+"""
+def main():
+    file = open("Final.txt", 'r')
+    data = files.read
+    nums = data.split()
+    print("Number of grades: ", len(nums))
+then
+    infile = open("Final.txt", 'r')
+    total = 0
+    nums = 0
+    line = float(infile.readline())
+    while line != "":
+        nums += 1
+        total += float(line)
+        line = infile.readline()
+        class_avg = total / nums
+    print("The class average is: ", clas_avg)
+finally
+def calculate_percent_above_avg(nums, class_avg):
+    above_avg = 0
+    length = len(nums)
+    for index in range (length):
+        if nunbers[index] > class_avg:
+            above_avg = above_avg +1
+    return above_avg / length
+
+calculate_percent_above_avg()
+main()
+
+"""
